@@ -16,3 +16,12 @@ li {
     list-style: none;
     text-align: center;
 }
+
+#timer {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.d-none {
+    display: none;
+}
