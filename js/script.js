@@ -1,6 +1,5 @@
 
-// Dopo 30 secondi, nascondere i numeri.
-// L’utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite un prompt().
+
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
 
@@ -26,9 +25,10 @@ numeriHtml.innerHTML = numeriCasuali.join(" - ");
 
 
 // Avviare un timer di 30 secondi
+// Dopo 30 secondi, nascondere i numeri.
 let secondiRimanenti = 30;
 
-let contoRovescia = setTimeout( function() {
+let contoRovescia = setInterval( function() {
 
     secondiRimanenti --;
     timer.innerHTML = "00" + ":" + secondiRimanenti;
@@ -40,6 +40,17 @@ let contoRovescia = setTimeout( function() {
 
     console.log(secondiRimanenti);
 
-}, 3000);
+}, 1000);
 
-// console.log(contoRovescia);
+
+// L’utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite un prompt().
+// faccio partire un setTimeout dopo un tot mi devono apparire i prompt
+
+setTimeout(function() {
+
+    for(let i = 0; i < 5; i++) {
+        const numeri = parseInt(prompt("Inserisci i numeri visti!!"));
+    }
+    // console.log(numeri);
+}, 31000);
+
