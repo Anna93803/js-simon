@@ -66,25 +66,9 @@ setTimeout(function() {
     }else if (numeriIndovinati.length == 0) {
         alert("non hai indovinato neanche un numero, concentrati!!")
     }else {
-        alert(`c'eri quasi, numeri indovinati ${numeriIndovinati}`);
+        alert(`c'eri quasi, numeri indovinati ${numeriIndovinati.join(" - ")}`);
     }
 
-    // for(let i = 0; i < numeriUtente.length; i ++) {
-
-    //     if(numeriUtente[i] === numeriCasuali[i]) {
-    //         numeriIndovinati.push(numeriUtente);
-    //     }
-    //     console.log(numeriIndovinati);
-    // }
-
-    // for(let i = 0; i < numeriCasuali.length; i++) {
-
-    //     if(numeriCasuali[i] === numeriUtente[i]) {
-
-    //         numeriIndovinati.push(numeriCasuali);
-    //     }
-    // }
-    // console.log(numeri);
 }, 31000);
 
 console.log(numeriIndovinati);
